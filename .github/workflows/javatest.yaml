@@ -17,5 +17,5 @@ jobs:
           java-version: 21
 
 
-        -run: mvn test
+      - run: mvn test
 
