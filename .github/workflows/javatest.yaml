@@ -19,7 +19,7 @@ jobs:
 
       - run: mvn test
 
-      - name: Send HTML Report Mail
+      - name: Send Mail
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
@@ -34,4 +34,4 @@ jobs:
           to: yuhannciamaryleno@gmail.com
           from: GitHub Actions
 
-          html_body: file://target/surefire-reports/emailable-report.html
+          body: Test Execution Completed Successfully
